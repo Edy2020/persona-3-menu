@@ -408,6 +408,7 @@
                 opacity: 0;
                 transform: rotate(90deg) translateX(-1rem);
             }
+
             100% {
                 opacity: 1;
                 transform: rotate(90deg) translateX(0);
@@ -434,7 +435,6 @@
 </head>
 
 <body>
-    <!-- Background Video -->
     <video id="bgVideo" class="bg-video-replacement" src="1-bg.mp4" autoplay muted playsinline></video>
     <script>
         document.getElementById('bgVideo').addEventListener('ended', function () {
@@ -551,7 +551,7 @@
 
                 if (isInteraction) {
                     menuSound.currentTime = 0;
-                    menuSound.play().catch(function(e) {});
+                    menuSound.play().catch(function (e) { });
                 }
 
                 active = idx;
